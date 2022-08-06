@@ -3,6 +3,11 @@ Options +FollowSymLinks -MultiViews
 RewriteEngine On
 RewriteBase /
 
+ErrorDocument 404 /error/400/404.html
+ErrorDocument 403 /error/400/403.html
+
+RedirectMatch 403 /\.git
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 

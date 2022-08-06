@@ -83,7 +83,7 @@
         return -1;
     }
 
-    $userURL = "https://api.apexstats.dev/id?platform=".$player['Platform']."&id=".$player['PlayerID'];
+    $userURL = "https://api.jumpmaster.xyz/user/ID?platform=".$player['Platform']."&id=".$player['PlayerID'];
     $getJson = file_get_contents($userURL, false, stream_context_create($streamOpts));
     $json = json_decode($getJson, true);
     
@@ -244,7 +244,7 @@
         <span class="box">
             <span class="inner">
                 <span class="image">
-                    <img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/Arenas_Unranked.png" />
+                    <img src="https://cdn.jumppmaster.xyz/ProjectRanked/RankedBadges/Arenas_Unranked.png" />
                 </span>
                 <span class="top">N/A</span>
                 <span class="bottom">N/A</span>

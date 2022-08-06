@@ -18,7 +18,7 @@
         
         if(mysqli_num_rows($split) < 1) {
             return '
-                <span class="image"><img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/'.$type.'_Unranked.png" /></span>
+                <span class="image"><img src="https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/'.$type.'_Unranked.png" /></span>
                 <span class="top">0 '.$suffix.'</span>
                 <span class="bottom">Unranked</span>
             ';
@@ -29,7 +29,7 @@
         $rankScore = $info[$type."_RankScore"];
 
         return '
-            <span class="image"><img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/'.rankImagePreUpdate($isPred, $ladderPos, $rankScore, $season, $type).'.png" /></span>
+            <span class="image"><img src="https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/'.rankImagePreUpdate($isPred, $ladderPos, $rankScore, $season, $type).'.png" /></span>
             <span class="top">'.number_format($rankScore).' '.$suffix.'</span>
             <span class="bottom">'.rankNamePreUpdate($isPred, $ladderPos, $rankScore, $type, $master).'</span>
         ';

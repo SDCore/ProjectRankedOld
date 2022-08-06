@@ -18,7 +18,7 @@
         
         if(mysqli_num_rows($split) < 1) {
             return '
-                <span class="image"><img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/'.$type.'_Unranked.png" /></span>
+                <span class="image"><img src="https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/'.$type.'_Unranked.png" /></span>
                 <span class="top">0 '.$suffix.'</span>
                 <span class="bottom">Unranked</span>
             ';
@@ -29,7 +29,7 @@
         $rankScore = $info[$type."_RankScore"];
 
         return '
-            <span class="image"><img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/'.rankImagePostUpdate($isPred, $ladderPos, $rankScore, $season, $type).'.png" /></span>
+            <span class="image"><img src="https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/'.rankImagePostUpdate($isPred, $ladderPos, $rankScore, $season, $type).'.png" /></span>
             <span class="top">'.number_format($rankScore).' '.$suffix.'</span>
             <span class="bottom">'.rankNamePostUpdate($isPred, $ladderPos, $rankScore, $type, $master).'</span>
         ';
@@ -91,7 +91,7 @@
     }
 
     function currentRank($id, $platform, $score, $type, $season, $opts) {
-        $file = file_get_contents("https://api.apexstats.dev/id?platform=".$platform."&id=".$id, false, stream_context_create($opts));
+        $file = file_get_contents("https://api.jumpmaster.xyz/user/ID?platform=".$platform."&id=".$id, false, stream_context_create($opts));
 
         $rank = json_decode($file, true);
 
@@ -101,7 +101,7 @@
         if($type == "BR") {
             return '
                 <span class="image">
-                    <img src="https://cdn.apexstats.dev/ProjectRanked/RankedBadges/Season '.$season.'/'.$type.'/'.$BR['name'].'.png" />
+                    <img src="https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/Season '.$season.'/'.$type.'/'.$BR['name'].'.png" />
                 </span>
                 <span class="top">
                     <span class="current">'.number_format($BR['score']).' RP
@@ -111,9 +111,9 @@
             ';
         }else{
             if($Arenas['name'] == "Unranked") {
-                $image = 'https://cdn.apexstats.dev/ProjectRanked/RankedBadges/Arenas_Unranked.png';
+                $image = 'https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/Arenas_Unranked.png';
             }else{
-                $image = 'https://cdn.apexstats.dev/ProjectRanked/RankedBadges/Season '.$season.'/'.$type.'/'.$Arenas['name'].'.png';
+                $image = 'https://cdn.jumpmaster.xyz/ProjectRanked/RankedBadges/Season '.$season.'/'.$type.'/'.$Arenas['name'].'.png';
             }
 
             return '

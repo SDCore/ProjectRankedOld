@@ -93,7 +93,7 @@
 
         if($i % 2 == 0){
             while($row = mysqli_fetch_array($queryPlayer)) {
-                $url = "https://api.apexstats.dev/id?platform=".$row['Platform']."&id=".$row['PlayerID'];
+                $url = "https://api.jumpmaster.xyz/user/ID?platform=".$row['Platform']."&id=".$row['PlayerID'];
     
                 $getJson = file_get_contents($url, false, stream_context_create($streamOpts));
     

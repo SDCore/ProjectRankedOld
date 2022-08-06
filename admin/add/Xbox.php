@@ -26,7 +26,7 @@
     if(isset($_POST['addUser'])) {
         $uid = $_POST['id'];
 
-        $IDAPI = file_get_contents("https://api.apexstats.dev/id?platform=X1&id=".$uid, false, stream_context_create($streamOpts));
+        $IDAPI = file_get_contents("https://api.jumpmaster.xyz/user/ID?platform=X1&id=".$uid, false, stream_context_create($streamOpts));
 
         $user = json_decode($IDAPI, true);
 

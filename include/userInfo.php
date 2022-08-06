@@ -9,7 +9,7 @@
     }
 
     function isOnline($platform, $id, $streamOpts) {
-        $online = file_get_contents("https://api.apexstats.dev/isOnline?platform=".$platform."&id=".$id, false, stream_context_create($streamOpts));
+        $online = file_get_contents("https://api.jumpmaster.xyz/user/ID?platform=".$platform."&id=".$id, false, stream_context_create($streamOpts));
         $status = json_decode($online, true);
 
         $user = $status['user']['status'];
