@@ -1,0 +1,12 @@
+<?php
+    // Debug
+    $debug = true or false;
+
+    // DB Credentials
+    $host = "Host IP";
+    $user = "Host User";
+    $pass = "Host Pass";
+    $db = "Host DB";
+
+    // Info
+    $RankType = "BR or Arenas";

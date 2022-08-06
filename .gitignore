@@ -1,0 +1,3 @@
+*.css.map
+*connect.php
+/node_modules/

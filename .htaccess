@@ -1,0 +1,9 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^/?user/(.*)$ /user.php?id=$1 [L]
