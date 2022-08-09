@@ -59,7 +59,7 @@
 		overflow: hidden;
 		padding: 0 15px 5px 25px;
 		background: rgba(43, 44, 121, 1);
-		border-bottom: 5px solid rgba(199, 140, 194, 1);
+		border-bottom: 5px solid rgba(58, 188, 122, 1);
 		&::before {
 			top: 0;
 			left: 0;
@@ -69,12 +69,12 @@
 			position: absolute;
 			transform: $navSkewNeg;
 			transform-origin: top left;
-			background: url("https://cdn.jumpmaster.xyz/ProjectRanked/NavBackground/Season13.png")
+			background: url("https://cdn.jumpmaster.xyz/ProjectRanked/NavBackground/Season14.png")
 				center;
 		}
 		&:hover {
 			background: rgba(43, 44, 121, 1);
-			border-bottom: 5px solid rgba(255, 255, 255, 1);
+			border-bottom: 5px solid rgba(117, 255, 181, 1);
 		}
 		.inner {
 			display: flex;
@@ -86,7 +86,7 @@
 				top: 9px;
 				font-size: 14pt;
 				position: relative;
-				color: rgba(196, 176, 244, 1);
+				color: #c8a854;
 				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 			}
 			.bottom {
