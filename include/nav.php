@@ -81,7 +81,7 @@
             if($RankType == "BR") require_once(__DIR__."/../analytics/BR.html");
             if($RankType == "Arenas") require_once(__DIR__."/../analytics/Arenas.html");
 
-            $homeLink = "https://ranked.jumpmaster.xyz/";
+            $homeLink = "https://ranked.apexstats.dev/";
         }else{
             $homeLink = "/";
         }
