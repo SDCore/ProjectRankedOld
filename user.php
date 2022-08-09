@@ -178,6 +178,25 @@
         <span class="title">Arenas History</span>
     </span>
     <span class="history">
+        <div class="season">Season 13 &#8212; Saviors</div>
+        <span class="box">
+            <span class="inner">
+                <?php echo rankInfoPreUpdate($DBConn, "13", "1", "BR", $UID, 0); ?>
+            </span>
+            <span class="inner">
+                <?php echo rankInfoPreUpdate($DBConn, "13", "2", "BR", $UID, 0); ?>
+            </span>
+        </span>
+        <span class="box">
+            <span class="inner">
+                <?php echo rankInfoPreUpdate($DBConn, "13", "1", "Arenas", $UID, 0); ?>
+            </span>
+            <span class="inner">
+                <?php echo rankInfoPreUpdate($DBConn, "13", "2", "Arenas", $UID, 0); ?>
+            </span>
+        </span>
+    </span>
+    <span class="history">
         <div class="season">Season 12 &#8212; Defiance</div>
         <span class="box">
             <span class="inner">
